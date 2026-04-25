@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # Load dataset
 df = pd.read_csv("kidney_disease.csv")
@@ -62,5 +64,24 @@ df['Sugar'] = pd.to_numeric(df['Sugar'], errors='coerce')
 df['Albumin'] = df['Albumin'].fillna(df['Albumin'].median())
 df['Sugar'] = df['Sugar'].fillna(df['Sugar'].median())
 
+# Classification to numeric 
+df['classification'] = df['classification'].str.strip().str.lower()
+df['classification'] = df['classification'].map({'ckd': 1, 'notckd': 0})
+
 # ---- Final check ----
 print("Remaining missing values:\n", df.isna().sum())
+
+# Plotting
+plt.scatter(df['age'], df['Blood Pressure'])
+plt.xlabel("Age")
+plt.ylabel("Blood Pressure")
+plt.title("Age vs Blood Pressure")
+plt.show()
+
+
+corr = df.corr(numeric_only=True)
+
+plt.figure(figsize=(10, 8))
+sns.heatmap(corr, annot=True)
+plt.title("Correlation Matrix")
+plt.show()
