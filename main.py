@@ -82,6 +82,6 @@ plt.show()
 corr = df.corr(numeric_only=True)
 
 plt.figure(figsize=(10, 8))
-sns.heatmap(corr, annot=True)
+sns.heatmap(corr, annot=True, cmap='coolwarm', fmt='.2f', linewidths=0.5,mask=corr.abs()<=.6)
 plt.title("Correlation Matrix")
 plt.show()
