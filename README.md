@@ -108,12 +108,12 @@ _____
 
 ---
 
-## team mmebers
-* Ahmed ezzat
-* Abdelrahman ahmed
-* Dana fattal
-* Omer ahmed
-* Peter gerges
+## team members
+* Ahmed Ezzat
+* Abdelrahman Ahmed
+* Dana Fattal
+* Omer Ahmed
+* Peter Gerges
   
 
 
