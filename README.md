@@ -1,5 +1,5 @@
 # health-crisis-data-analysis
-# 🏥 Chronic Kidney Disease Analysis
+
 
 ##  Overview
 
@@ -33,7 +33,7 @@ Target variable:
 
 ---
 
-## 🧹 Data Cleaning
+##  Data Cleaning
 
 * Replaced `"?"` with `NaN`
 * Removed extra spaces in text values
@@ -74,7 +74,7 @@ The following visualizations were created:
 * Several features required cleaning due to missing or inconsistent values
 * Data preprocessing significantly improved dataset quality
 
-## 🚀 How to Run
+##  How to Run
 
 ```bash
 git clone <your-repo-link>
@@ -88,6 +88,11 @@ python analysis.py
 ##   Output
 
 <img width="1243" height="1068" alt="Screenshot 2026-04-25 173947" src="https://github.com/user-attachments/assets/fa78dbe7-a157-43d1-8b70-9f54b2ed9e12" />
+
+
+
+
+
 _____
 <img width="791" height="677" alt="Screenshot 2026-04-25 173934" src="https://github.com/user-attachments/assets/86fbd3d7-8c89-4f2a-98c1-3b840f53eb55" />
 
@@ -95,7 +100,7 @@ _____
 
 ---
 
-## 📈 Future Improvements
+##  Future Improvements
 
 * Apply advanced machine learning models
 * Improve prediction accuracy
