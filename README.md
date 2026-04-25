@@ -77,10 +77,10 @@ The following visualizations were created:
 ##  How to Run
 
 ```bash
-git clone <your-repo-link>
-cd project-folder
-pip install -r requirements.txt
-python analysis.py
+git clone <https://github.com/bitboody/health-crisis-data-analysis>
+cd health-crisis-data-analysis
+python --version  # Python 3.8+
+python main.py
 ```
 
 ---
